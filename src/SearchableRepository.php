@@ -146,4 +146,29 @@ class SearchableRepository extends EntityRepository
             $key => $values
         ]));
     }
+    
+    /**
+     * Get the requested models from an array of object IDs.
+     *
+     * @param       $builder
+     * @param array $ids
+     *
+     * @return \Illuminate\Support\Collection
+     */
+    public function getScoutModelsByIds($builder, array $ids)
+    {
+        return $this->whereIn('id', $ids)->get();
+    }
+
+    /**
+     * Create a new Collection instance.
+     *
+     * @param array $models
+     *
+     * @return \Illuminate\Support\Collection
+     */
+    public function newCollection(array $models = [])
+    {
+        return collect($models);
+    }
 }
