@@ -1,6 +1,6 @@
 {
-  "name": "laravel-doctrine/scout",
-  "description": "A Doctrine bridge for Laravel Scout",
+  "name": "doxadoxa/laravel-scout",
+  "description": "A Doctrine bridge for Laravel Scout. Copy of laravel-doctrine/scout, cause this version isn't been updating.",
   "license": "MIT",
   "keywords": [
     "doctrine",
